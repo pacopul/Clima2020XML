@@ -15,6 +15,7 @@
 		2A158AB323D84DC600312F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A158AB123D84DC600312F30 /* LaunchScreen.storyboard */; };
 		2A158ABE23D84DC700312F30 /* Clima2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A158ABD23D84DC700312F30 /* Clima2020Tests.swift */; };
 		2A158AC923D84DC700312F30 /* Clima2020UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A158AC823D84DC700312F30 /* Clima2020UITests.swift */; };
+		2A158AD723D852A900312F30 /* MiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A158AD623D852A900312F30 /* MiCelda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2A158AC423D84DC700312F30 /* Clima2020UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Clima2020UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A158AC823D84DC700312F30 /* Clima2020UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clima2020UITests.swift; sourceTree = "<group>"; };
 		2A158ACA23D84DC700312F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A158AD623D852A900312F30 /* MiCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCelda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2A158AAF23D84DC600312F30 /* Assets.xcassets */,
 				2A158AB123D84DC600312F30 /* LaunchScreen.storyboard */,
 				2A158AB423D84DC600312F30 /* Info.plist */,
+				2A158AD623D852A900312F30 /* MiCelda.swift */,
 			);
 			path = Clima2020;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				2A158AAB23D84DC500312F30 /* ViewController.swift in Sources */,
 				2A158AA723D84DC500312F30 /* AppDelegate.swift in Sources */,
 				2A158AA923D84DC500312F30 /* SceneDelegate.swift in Sources */,
+				2A158AD723D852A900312F30 /* MiCelda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
