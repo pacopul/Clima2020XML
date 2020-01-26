@@ -17,13 +17,13 @@ class ViewController: UIViewController, XMLParserDelegate, UITableViewDelegate, 
     @IBOutlet weak var lblPPCurrent: UILabel!
     
     var parser = XMLParser()        // Parseador
-    var dias = [[String:String]]()      // Array de diccionario dias
-    var dia = [String:String]()     // Diccionario dia
+    var dias = [[String:String]]()  // Array de diccionario
+    var dia = [String:String]()     // Diccionario
     var nodo = ""
     var currentIco:String = ""
     var currentPro = String()
-    var currentTem = String()
-    var currentPre = String()
+    var currentTem = ""
+    var currentPre = ""
     var isWeather : Bool = false
     var isCurrent : Bool = false
 
@@ -94,8 +94,10 @@ class ViewController: UIViewController, XMLParserDelegate, UITableViewDelegate, 
         let dia = dias[indexPath.row]
         // ico
         let url = URL(string: dia["ico"]!)
-        let data = try? Data(contentsOf: url!)
-        celda.ivIcoCalda.image = UIImage(data: data!)
+        DispatchQueue.main.async {
+            let data = try? Data(contentsOf: url!)
+            celda.ivIcoCalda.image = UIImage(data: data!)
+        }
         // resto
         celda.lblPronoCelda.text = dia["prono"]
         celda.lblMaxCelda.text = "\(dia["max"]!)º"
@@ -109,8 +111,10 @@ class ViewController: UIViewController, XMLParserDelegate, UITableViewDelegate, 
     
     func pintaCurrent(){
         let url = URL(string: currentIco)
-        let data = try? Data(contentsOf: url!)
-        ivIcoCurrent.image = UIImage(data: data!)
+        DispatchQueue.main.async {
+            let data = try? Data(contentsOf: url!)
+            self.ivIcoCurrent.image = UIImage(data: data!)
+        }
         lblPronoCurrent.text = currentPro
         lblTempCuerrent.text = "\(currentTem)º"
         lblPPCurrent.text = "\(currentPre)%"
